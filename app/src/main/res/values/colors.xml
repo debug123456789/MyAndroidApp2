@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary - Electric Blue -->
+    <color name="primary">#FF60A5FA</color>
+    <color name="primary_variant">#FF3B82F6</color>
+    <color name="on_primary">#FF020617</color>
+    
+    <!-- Secondary - Muted Purple -->
+    <color name="secondary">#FFC084FC</color>
+    <color name="secondary_variant">#FFA855F7</color>
+    <color name="on_secondary">#FF020617</color>
+    
+    <!-- Surface -->
+    <color name="surface">#FF0F172A</color>
+    <color name="on_surface">#FFF8FAFC</color>
+    
+    <!-- Background -->
+    <color name="background">#FF020617</color>
+    <color name="on_background">#FFF8FAFC</color>
+    
+    <!-- Error -->
+    <color name="error">#FFF87171</color>
+    <color name="on_error">#FF020617</color>
+    
+    <!-- Success -->
+    <color name="success">#FF4ADE80</color>
+    
+    <!-- Warning -->
+    <color name="warning">#FFFBBF24</color>
+    
+    <!-- Glass surfaces (used by Compose theme) -->
+    <color name="glass_surface">#B30F172A</color>
+    <color name="glass_surface_strong">#CC0F172A</color>
+    <color name="glass_surface_subtle">#8F0F172A</color>
+    <color name="glass_border">#4D334155</color>
+    <color name="glass_border_strong">#73475569</color>
+</resources>

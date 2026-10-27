@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#020617"
+        android:pathData="M54,0C24.24,0 0,24.24 0,54C0,83.76 24.24,108 54,108C83.76,108 108,83.76 108,54C108,24.24 83.76,0 54,0Z" />
+    
+    <!-- Cloud icon -->
+    <path
+        android:fillColor="#60A5FA"
+        android:pathData="M54,30C68,30 78,40 78,54C78,62 72,68 63,70.5C63,70.5 54,77 40.5,77C28,77 18,67 18,54C18,40 28,30 40.5,30C49.5,30 54,30 54,30Z" />
+</vector>

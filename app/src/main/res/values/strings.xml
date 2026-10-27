@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">NexShizuku</string>
+    
+    <!-- Home Screen -->
+    <string name="home_title">NexShizuku</string>
+    <string name="home_subtitle">Privileged Service Manager</string>
+    <string name="connect_button">Connect to Service</string>
+    <string name="disconnect_button">Disconnect</string>
+    <string name="refresh_button">Refresh</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_error">Error</string>
+    <string name="status_unknown">Unknown</string>
+    
+    <!-- Service Screen -->
+    <string name="service_title">Service Management</string>
+    <string name="service_subtitle">Configure and monitor the privileged service</string>
+    <string name="launch_mode_title">Launch Mode</string>
+    <string name="capabilities_title">Capabilities</string>
+    <string name="binder_status_title">Binder Connection</string>
+    <string name="service_controls_title">Service Controls</string>
+    <string name="restart_button">Restart Service</string>
+    <string name="shutdown_button">Shutdown</string>
+    
+    <!-- Permissions Screen -->
+    <string name="permissions_title">App Permissions</string>
+    <string name="permissions_subtitle">Manage which apps can access the service</string>
+    <string name="granted_permissions_title">Granted Permissions</string>
+    <string name="available_apps_title">Available Apps</string>
+    <string name="grant_button">Grant</string>
+    <string name="revoke_button">Revoke</string>
+    
+    <!-- Terminal Screen -->
+    <string name="terminal_title">Terminal</string>
+    <string name="terminal_subtitle">Execute commands on the service</string>
+    <string name="execute_button">Execute</string>
+    <string name="clear_button">Clear History</string>
+    <string name="quick_commands_title">Quick Commands</string>
+    <string name="history_title">History</string>
+    <string name="command_placeholder">Enter command…</string>
+    
+    <!-- Logs Screen -->
+    <string name="logs_title">Logs</string>
+    <string name="logs_subtitle">Event history and diagnostics</string>
+    <string name="search_placeholder">Search logs…</string>
+    <string name="clear_logs_button">Clear Logs</string>
+    <string name="copy_logs_button">Copy All</string>
+    <string name="filter_all">All</string>
+    <string name="filter_debug">DEBUG</string>
+    <string name="filter_info">INFO</string>
+    <string name="filter_warning">WARNING</string>
+    <string name="filter_error">ERROR</string>
+    <string name="filter_fatal">FATAL</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Customize your NexShizuku experience</string>
+    
+    <string name="appearance_section">Appearance</string>
+    <string name="theme_setting">Theme</string>
+    <string name="theme_subtitle">Choose color scheme</string>
+    <string name="animations_setting">Animations</string>
+    <string name="animations_subtitle">Enable UI animations</string>
+    <string name="reduced_motion_setting">Reduced Motion</string>
+    <string name="reduced_motion_subtitle">Minimize animations for accessibility</string>
+    
+    <string name="behavior_section">Behavior</string>
+    <string name="auto_connect_setting">Auto Connect</string>
+    <string name="auto_connect_subtitle">Connect to service on app start</string>
+    <string name="launch_mode_setting">Launch Mode</string>
+    <string name="launch_mode_subtitle">Preferred service launch method</string>
+    <string name="tech_details_setting">Technical Details</string>
+    <string name="tech_details_subtitle">Show detailed technical information</string>
+    
+    <string name="terminal_section">Terminal</string>
+    <string name="terminal_font_size_setting">Font Size</string>
+    <string name="terminal_font_size_subtitle">Terminal font size in sp</string>
+    <string name="terminal_theme_setting">Theme</string>
+    <string name="terminal_theme_subtitle">Terminal color scheme</string>
+    
+    <string name="logging_section">Logging</string>
+    <string name="log_level_setting">Log Level</string>
+    <string name="log_level_subtitle">Minimum level to record</string>
+    <string name="max_logs_setting">Max Log Entries</string>
+    <string name="max_logs_subtitle">Maximum stored log entries</string>
+    
+    <string name="about_section">About</string>
+    <string name="version_setting">Version</string>
+    <string name="licenses_setting">Open Source Licenses</string>
+    <string name="licenses_subtitle">View third-party licenses</string>
+    <string name="report_issue_setting">Report Issue</string>
+    <string name="report_issue_subtitle">Open GitHub issues page</string>
+    
+    <!-- Common -->
+    <string name="error_title">Error</string>
+    <string name="retry_button">Retry</string>
+    <string name="dismiss_button">Dismiss</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_button">OK</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="loading">Loading…</string>
+    <string name="empty_state">No data available</string>
+    <string name="copy_to_clipboard">Copied to clipboard</string>
+    
+    <!-- Launch Modes -->
+    <string name="launch_mode_auto">Auto</string>
+    <string name="launch_mode_auto_desc">Automatically determine best launch method</string>
+    <string name="launch_mode_adb">ADB</string>
+    <string name="launch_mode_adb_desc">Launch via ADB shell</string>
+    <string name="launch_mode_root">Root</string>
+    <string name="launch_mode_root_desc">Launch with root privileges</string>
+    <string name="launch_mode_shizuku">Shizuku</string>
+    <string name="launch_mode_shizuku_desc">Launch via Shizuku service</string>
+    
+    <!-- Terminal Themes -->
+    <string name="terminal_theme_dark">Dark</string>
+    <string name="terminal_theme_light">Light</string>
+    <string name="terminal_theme_solarized_dark">Solarized Dark</string>
+    <string name="terminal_theme_solarized_light">Solarized Light</string>
+    <string name="terminal_theme_monokai">Monokai</string>
+    
+    <!-- Themes -->
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+</resources>
