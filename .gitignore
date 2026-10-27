@@ -1,0 +1,78 @@
+# Gradle
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
+local.properties
+*.properties.local
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.gz
+
+# Generated files
+*.generated
+*.log
+*.tmp
+
+# Keystore files
+*.jks
+*.keystore
+*.key
+*.p12
+*.pfx
+
+# Secrets
+*.secrets
+secrets.properties
+signing.properties
+local.properties
+
+# Test outputs
+test-results/
+coverage/
+*.ec
+
+# Android
+app/release/
+app/debug/
+captures/
+.externalNativeBuild/
+
+# Gradle wrapper (keep the jar, ignore the rest)
+gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
+
+# Caches
+*.cache
+.caches/
+
+# Temporary
+temp/
+tmp/
+*.temp
+*.tmp
