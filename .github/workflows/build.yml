@@ -45,18 +45,38 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       
+      - name: Setup Gradle tmpdir
+        run: |
+          mkdir -p "$RUNNER_TEMP/nexshizuku-tmp"
+          test -d "$RUNNER_TEMP/nexshizuku-tmp"
+          test -w "$RUNNER_TEMP/nexshizuku-tmp"
+          echo "GRADLE_TMPDIR=$RUNNER_TEMP/nexshizuku-tmp" >> $GITHUB_ENV
+          echo "TMPDIR=$RUNNER_TEMP/nexshizuku-tmp" >> $GITHUB_ENV
+      
       - name: Verify Gradle Wrapper
         run: ./gradlew --version
+        env:
+          GRADLE_OPTS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp -Xmx1024m"
+          _JAVA_OPTIONS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp"
       
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
+        env:
+          GRADLE_OPTS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp -Xmx1024m"
+          _JAVA_OPTIONS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp"
       
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest --stacktrace
+        env:
+          GRADLE_OPTS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp -Xmx1024m"
+          _JAVA_OPTIONS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp"
       
       - name: Run Lint
         run: ./gradlew lintDebug --stacktrace
         continue-on-error: true
+        env:
+          GRADLE_OPTS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp -Xmx1024m"
+          _JAVA_OPTIONS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp"
       
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
@@ -120,9 +140,19 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       
+      - name: Setup Gradle tmpdir
+        run: |
+          mkdir -p "$RUNNER_TEMP/nexshizuku-tmp"
+          test -d "$RUNNER_TEMP/nexshizuku-tmp"
+          test -w "$RUNNER_TEMP/nexshizuku-tmp"
+          echo "GRADLE_TMPDIR=$RUNNER_TEMP/nexshizuku-tmp" >> $GITHUB_ENV
+          echo "TMPDIR=$RUNNER_TEMP/nexshizuku-tmp" >> $GITHUB_ENV
+      
       - name: Build Release APK
         run: ./gradlew assembleRelease --stacktrace
         env:
+          GRADLE_OPTS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp -Xmx1024m"
+          _JAVA_OPTIONS: "-Djava.io.tmpdir=$RUNNER_TEMP/nexshizuku-tmp"
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
